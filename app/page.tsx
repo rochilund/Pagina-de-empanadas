@@ -38,7 +38,7 @@ export default function Home() {
               Empanadas artesanales · Recoleta
             </p>
             <h1 className="mt-3 font-titulo text-4xl font-bold leading-[1.1] text-rojo sm:text-5xl lg:text-6xl">
-              El sabor de siempre, en cada repulgue.
+              El sabor de antaño, en cada repulgue.
             </h1>
             <p className="mt-5 max-w-md text-lg leading-relaxed">
               ¿De carne cortada a cuchillo o de jamón y queso? Elegí tus favoritas y te las
