@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const poppins = Poppins({
   subsets: ["latin"],
-  variable: "--font-fraunces",
-  style: ["normal", "italic"],
+  weight: ["600", "700"],
+  variable: "--font-poppins",
 });
 
 const inter = Inter({
@@ -14,14 +14,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Recoleta Empanadas — Horno de barro en el corazón de Recoleta",
+  title: "La Esquina · Empanadas artesanales en Recoleta",
   description:
-    "Empanadas artesanales hechas a mano todos los días en Recoleta, Buenos Aires. Clásicas, vegetarianas y de autor. Pedí por WhatsApp.",
+    "El sabor de siempre, en cada repulgue. Empanadas artesanales recién horneadas en Recoleta, Buenos Aires. Pedí por WhatsApp.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="es-AR" className={`${fraunces.variable} ${inter.variable}`}>
+    <html lang="es-AR" className={`${poppins.variable} ${inter.variable}`}>
       <body>{children}</body>
     </html>
   );

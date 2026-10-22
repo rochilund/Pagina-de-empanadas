@@ -1,26 +1,18 @@
 @import "tailwindcss";
 
+/* Paleta y tipografías del manual de marca de La Esquina */
 @theme {
-  --color-crema: #f7f1e6;
-  --color-papel: #fbf8f2;
-  --color-masa: #e9c98f;
-  --color-dorado: #c8913a;
-  --color-terracota: #b5532f;
-  --color-ladrillo: #8e3b22;
-  --color-oliva: #2f3b2a;
-  --color-musgo: #4a5a3c;
-  --color-tinta: #1d1a16;
+  --color-rojo: #a93425;      /* Rojo horno */
+  --color-rojo-oscuro: #8a2a1e;
+  --color-crema: #fff7ea;     /* Crema masa */
+  --color-dorado: #e8a14d;    /* Dorado empanada */
+  --color-tinta: #302720;     /* Marrón tinta */
+  --color-oliva: #6d7950;     /* Verde oliva */
 
-  --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-titulo: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 
-  --animate-float: float 6s ease-in-out infinite;
-  --animate-marquee: marquee 40s linear infinite;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0) rotate(-6deg); }
-  50% { transform: translateY(-14px) rotate(-3deg); }
+  --animate-marquee: marquee 35s linear infinite;
 }
 
 @keyframes marquee {
@@ -37,17 +29,6 @@ body {
   color: var(--color-tinta);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
-}
-
-/* Textura de papel sutil */
-.grain {
-  background-image: radial-gradient(rgba(29, 26, 22, 0.05) 1px, transparent 1px);
-  background-size: 4px 4px;
-}
-
-/* Arco estilo fachada parisina de Recoleta */
-.arco {
-  border-radius: 999px 999px 1.5rem 1.5rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
